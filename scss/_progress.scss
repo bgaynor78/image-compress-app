@@ -1,0 +1,22 @@
+.progress {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  display: none;
+
+  &:before {
+    font-family: $icon-font;
+    color: $simple-blue;
+    content: '\e97b';
+    font-size: 40px;
+    display: inline-block;
+    animation: spin .75s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

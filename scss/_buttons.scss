@@ -1,0 +1,35 @@
+@import './variables';
+@import './mixins';
+
+.button {
+  padding: .35rem .85rem;
+  text-decoration: none;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.button-default {
+  background-color: $white;
+  border: 1px solid $light-grey;
+  color: $dark-grey;
+  @include prefix(border-radius, 2px, webkit moz);
+  @include prefix(transition, all .15s linear, webkit moz);
+
+  &:hover {
+    background-color: $light-grey;
+    color: $white;
+  }
+}
+
+.button-primary {
+  background-color: $simple-blue;
+  border-color: $simple-blue;
+  color: $white;
+  @include prefix(border-radius, 2px, webkit moz);
+  @include prefix(transition, all .15s linear, webkit moz);
+
+  &:hover {
+    background-color: $simple-dark-blue;
+    border-color: $simple-dark-blue;
+  }
+}

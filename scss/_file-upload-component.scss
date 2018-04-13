@@ -1,0 +1,13 @@
+@import './variables';
+@import './mixins';
+
+.file-upload-component {
+  input {
+    display: none;
+  }
+}
+
+@keyframes chart-animation {
+  0% {border-bottom-width: 0;}
+  100% {border-bottom-width: 7rem};
+}

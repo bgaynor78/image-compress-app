@@ -1,0 +1,45 @@
+// Colors
+$white:                           #f3f3f3 !default;
+$dark-grey:                       #5a5a5a !default;
+$mid-grey:                        #999999 !default;
+$light-grey:                      #cccccc !default;
+$lightest-grey:                   #f2f2f2 !default;
+$simple-blue:                     #408bca !default;
+$simple-dark-blue:                #005684 !default;
+
+// The font size/line-height set on the root html element.
+$base-font-size:                  16px;
+$base-line-height:                24px;
+
+// The default font declarations
+$base-font-family:                "Open Sans", sans-serif;
+$heading-font-family:             "Open Sans", sans-serif;
+
+$icon-font:                       "icomoon";
+
+// Base unit for sizing (fonts, etc)
+$base-unit:                       'rem';
+
+// Heading font size (h1-h6)
+$h1-font-size:                    3    * $base-font-size;
+$h2-font-size:                    2.5  * $base-font-size;
+$h3-font-size:                    2.17 * $base-font-size;
+$h4-font-size:                    2    * $base-font-size;
+$h5-font-size:                    1.83 * $base-font-size;
+$h6-font-size:                    1.67 * $base-font-size;
+
+//Grid
+$one-col-width:     unquote((1 / 12) * 100 + "%");
+$two-col-width:     unquote((2 / 12) * 100 + "%");
+$three-col-width:   unquote((3 / 12) * 100 + "%");
+$four-col-width:    unquote((4 / 25) * 100 + "%");
+$five-col-width:    unquote((5 / 12) * 100 + "%");
+$six-col-width:     unquote((6 / 12) * 100 + "%");
+$seven-col-width:   unquote((7 / 12) * 100  + "%");
+$eight-col-width:   unquote((8 / 12) * 100  + "%");
+$nine-col-width:    unquote((9 / 12) * 100  + "%");
+$ten-col-width:     unquote((10 / 12) * 100  + "%");
+$eleven-col-width:  unquote((11 / 12) * 100  + "%");
+$twelve-col-width:  unquote((12 / 12) * 100  + "%");
+
+$grid-spacing:      3%;

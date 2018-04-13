@@ -1,0 +1,11 @@
+@import "variables";
+
+.blue-text {
+  color: $simple-blue !important;
+}
+.lowercase {
+  text-transform: lowercase !important;
+}
+.small-text {
+  font-size: 70%;
+}
