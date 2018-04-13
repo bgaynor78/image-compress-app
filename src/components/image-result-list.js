@@ -206,10 +206,10 @@ const ImageResultList = (props) => {
     return(
       <li className="image-results-list-item">
         <div className="row">
-          <div className="col-2">
+          <div className="col-4">
             <img className="compressed-image-preview" src={imageUrl}/>
           </div>
-          <div className="col-6 compressed-image-info">
+          <div className="col-8 compressed-image-info">
             <div className="compressed-image-stats">
               <div className="percent-reduction">{calculatePercentReduction(origSize, newSize)}</div>
               <div className="orig-size">{formatBytes(origSize)}</div> 

@@ -2,6 +2,8 @@
 @import './mixins';
 
 .file-upload-component {
+  padding-top: 2rem;
+  
   input {
     display: none;
   }

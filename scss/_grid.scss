@@ -5,6 +5,10 @@
   margin: 0 auto;
   padding-left: ($grid-spacing / 2);
   padding-right: ($grid-spacing / 2);
+
+  &.narrow {
+    max-width: 50vw;
+  }
 }
 .row {
   display: flex;
