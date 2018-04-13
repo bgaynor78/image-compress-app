@@ -1,16 +1,13 @@
 const path = require('path');
 const express = require('express');
 const request = require('request');
-const bodyParser = require('body-parser')
-const tinify = require('tinify');
-const fs = require('fs');
+const bodyParser = require('body-parser');
 
 module.exports = {
   app: function () {
     const app = express();
     const indexPath = path.join(__dirname, 'index.html');
     const publicPath = express.static(path.join(__dirname, '/dist'));
-    tinify.key = 'B785jLzGzD5r1tBZI-olv1PGuG_WAaR0'
     const postReqOptions = {
       url: 'https://api.tinify.com/shrink',
       method: 'POST',
@@ -19,24 +16,18 @@ module.exports = {
         'Content-type': 'text/plain'
       }
     }
-    const getReqOptions = {
-      url: 'https://api.tinify.com/output',
-      method: 'GET',
-      headers: {
-        'Authorization': 'Basic YXBpOkI3ODVqTHpHekQ1cjF0QlpJLW9sdjFQR3VHX1dBYVIw',
-        'Content-type': 'text/plain'
-      }
-    }
+    // const getReqOptions = {
+    //   url: 'https://api.tinify.com/output',
+    //   method: 'GET',
+    //   headers: {
+    //     'Authorization': 'Basic YXBpOkI3ODVqTHpHekQ1cjF0QlpJLW9sdjFQR3VHX1dBYVIw',
+    //     'Content-type': 'text/plain'
+    //   }
+    // }
 
     app.use(bodyParser.raw({limit: '50mb', type: 'application/octet-stream'}));
     app.post('/post', function(req, resp) {
       console.log("REQUEST BODY: ", req.body);
-
-      // tinify.fromBuffer(req.body).toBuffer((err, resultData) => {
-      //   if(err) throw err;
-      //   console.log(resultData);
-      //   resp.status(200).send(resultData);
-      // });
 
       function callback(error, response, body) {
         console.log("BODY: ", body);
